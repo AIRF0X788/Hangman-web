@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <!--En-tête-->
+    <head>
+
+        <!--Titre + image-->
+        <title>Hangman Game</title>
+        <link rel="shortcut icon" href="/images/Eyes.gif">
+
+        <!--utf-8-->
+        <meta charset="utf-8">
+
+        <!--Lier le css-->
+        <link rel="stylesheet" href="static/stylesGame.css">
+        
+    </head>
+    <!--Corps de page-->
+    <body>
+        <header>
+            <div class="arrow">
+                <a href="/home">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>          
+            <h1 class="big-title">Pendu : Le jeu</h1>
+        </header>
+        <div class="flex">
+            <form action="/choix" method="post">
+                <div class ="form-group">
+                    <input class ="form_input" id= "pseudo" required type="text" name="nom_utilisateur" placeholder="Votre Pseudo...">
+                    <label for="pseudo" class ="form_label">Votre Pseudo...</label>
+                </div>
+                <div class="diff">Choisis ta difficulté :</div>
+                <div class="container-Btn">
+                    <button class="item1" type="submit" value="EASY" name="w">Facile</button></a>
+                    <button class="item2" type="submit" value="NORMAL" name="w">Moyenne</button></a>
+                    <button class="item3" type="submit" value="HARD" name="w">Difficile</button></a>
+            </form>
+            </div>
+        </div>
+        <footer>
+        </footer>
+    </body>
+</html>
+
+<!--<div class="static-txt">Fait par</div>
+            <ul class="dynamic-txts">
+                <li><span>Damien</span></li>
+                <li><span>Guillaume</span></li>
+                <li><span>Ines</span></li>
+                <li><span>Antoine</span></li>
+            </ul>-->

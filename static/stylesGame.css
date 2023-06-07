@@ -1,0 +1,282 @@
+/* Header */
+
+header {
+    margin-top: -30px;
+    margin-right: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+header h1.big-title {
+    margin-left: 10px;
+    font-size: 75px;
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 0 0 5px black, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+    font-style: italic;
+}
+
+/* Flèches */
+
+.arrow {
+    margin-right: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.arrow span {
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: fleche 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3 ) {
+    animation-delay: -0.4s;
+}
+
+@keyframes fleche {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+/* Body */
+
+body {
+    background: url("../images/FondConjuring.jpg") center no-repeat;
+}
+
+
+/* Pseudo */
+
+.form_label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-left: 600px;
+    display: block;
+    transition: all 0.3s;
+    transform: translateY(0rem);
+    color: black;
+    text-shadow: 0 0 5px white, 0 0 10px black, 0 0 15px black, 0 0 20px white, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+    font-style: italic;
+  }
+  
+  .form_input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 200px;
+    background-color: transparent;
+    border-color: black;
+    width: 20%;
+    display: block;
+    transition: all 0.3s;
+    font-style: italic;
+  }
+  
+  .form_input:placeholder-shown + .form_label {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(-4rem);
+    transform: translateY(-4rem);
+  }
+
+/*.container-Input{
+    position: relative;
+    width: 250px;
+    margin-left: 40%;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    border-color: black;
+    color: black;
+    text-shadow: 0 0 5px black, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+    font-style: italic;
+}
+.container-Input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255, 0.7);
+    background: transparent;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    transition: 0.5s;
+    border-color: black;
+    color: black;
+    text-shadow: 0 0 5px black, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+    font-style: italic;
+}
+
+.container-Input span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1.1em;
+    letter-spacing: 0.2em;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    transition: 0.5s;
+    border-color: black;
+    color: black;
+    text-shadow: 0 0 5px black, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+    font-style: italic;
+}*/
+
+/* Difficultés */
+
+button,
+.item1,
+.item2,
+.item3 {
+    margin-left: 50px;
+    padding:15px;
+    width: 200px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    border-radius: 80px;
+    background-color: rgba(128, 128, 128, 0);
+    color: white;
+    text-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+    cursor: pointer;
+    animation: pulse 1.5s infinite cubic-bezier(0.66,0,0,1);
+    font-style: italic;
+}
+
+.diff {
+    margin-left: 550px;
+    font-size: 35px;
+    padding: 50px;
+    width: 300px;
+    font-style: italic;
+    color: black;
+    text-shadow: 0 0 5px white, 0 0 10px black, 0 0 15px black, 0 0 20px white, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+}
+.container-Btn {
+    margin-top: 30px;
+    margin-left: 350px;
+}
+
+.button:hover {
+    animation: none;
+}
+
+@keyframes pulse {
+    to {
+        box-shadow: 0 0 0 45px rgba(238, 235, 235, 0);
+    }
+}
+
+/* Pied de page */
+
+
+/* Prénoms dynamiques 
+
+.hero .static-txt {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.hero .dynamic-txts {
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.dynamic-txts li {
+    list-style: none;
+    color: rgb(60, 56, 56);
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+
+.dynamic-txts li span {
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+}
+
+.dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    border-left: 2px solid #16f37d;
+    animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+    40%, 60% {
+        left: calc(100% + 30px);
+    }
+    100% {
+        left: 0;
+    }
+} */
+
+/* Difficultés */
+
+/*.wave {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 30px;
+    color: black;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,0.2));
+}
+
+.wave span {
+    font-family: "Alfa Slab One", cursive;
+    display: inline-block;
+    animation: wave-anim 1s infinite;
+    animation-delay: calc(0.1s * var(--item));
+    text-shadow: 0 0 5px black, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+}
+
+@keyframes wave-anim {
+    0%,
+    40%,
+    100% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-20px);
+    }
+}*/

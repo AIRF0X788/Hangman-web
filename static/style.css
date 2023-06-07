@@ -1,0 +1,269 @@
+/* Header */
+
+header {
+    margin-top: -30px;
+    margin-right: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+header h1.big-title {
+    margin-left: 10px;
+    font-size: 75px;
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 0 0 5px black, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+    font-style: italic;
+}
+
+/* Flèches */
+
+.arrow {
+    margin-right: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.arrow span {
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: fleche 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3 ) {
+    animation-delay: -0.4s;
+}
+
+@keyframes fleche {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+/* Body */
+
+body {
+    background: url("../images/FondConjuring.jpg") center no-repeat;
+}
+
+/* Hangman */
+
+.entete{
+    margin-bottom: -50px;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    text-shadow: 0 0 5px #fff, 0 0 10px black, 0 0 15px #fff, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+    font-style: italic;
+}
+.word{
+    font-size: 70px;
+    margin-top: 150px;
+    letter-spacing: 10px;
+    color: black;
+    text-shadow: 0 0 5px #fff, 0 0 10px black, 0 0 15px #fff, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+    font-style: italic;
+}
+
+.main{
+    display: flex;
+    height: 350px;
+}
+.menu{
+    font-size: 50px;
+    text-align: center;
+    flex: 1;
+    display: inline-block;
+}
+
+.contenu{
+    font-size: 40px;
+    text-align: center;
+    width: 50%;
+    color: black;
+    text-shadow: 0 0 5px #fff, 0 0 10px black, 0 0 15px #fff, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+    font-style: italic;
+}
+
+/*.button{
+    border: 2px solid rgb(0, 0, 0);
+    width: 45%;
+    border-radius: 20px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+    display: block;
+    margin:auto;
+}*/
+
+
+/* Search bar */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+:root {
+    --font-style: 'Nunito Sans', sans-serif;
+}
+
+input {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    position:relative;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    background: transparent;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border: solid 3px white;
+    outline: none;
+    border-radius: 35px;
+    transition: all 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 white;
+    color: #fff;
+    font-style: italic;
+}
+
+input::placeholder {
+    color: #efefef;
+    opacity: 0;
+    transition: opacity 150ms ease-out;
+}
+
+input:focus::placeholder {
+    opacity: 1;
+}
+
+input:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 white;
+}
+
+input:focus,
+input:not(:placeholder-shown) {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 white;
+}
+
+/* Prénoms dynamiques 
+
+.hero .static-txt {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.hero .dynamic-txts {
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.dynamic-txts li {
+    list-style: none;
+    color: rgb(60, 56, 56);
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+
+.dynamic-txts li span {
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+}
+
+.dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    border-left: 2px solid #16f37d;
+    animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+    40%, 60% {
+        left: calc(100% + 30px);
+    }
+    100% {
+        left: 0;
+    }
+} */
+
+/* Difficultés */
+
+/*.wave {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 30px;
+    color: black;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,0.2));
+}
+
+.wave span {
+    font-family: "Alfa Slab One", cursive;
+    display: inline-block;
+    animation: wave-anim 1s infinite;
+    animation-delay: calc(0.1s * var(--item));
+    text-shadow: 0 0 5px black, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+}
+
+@keyframes wave-anim {
+    0%,
+    40%,
+    100% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-20px);
+    }
+}*/
+
+/*.button{
+    border: 2px solid rgb(0, 0, 0);
+    width: 45%;
+    border-radius: 20px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+    display: block;
+    margin:auto;
+}*/

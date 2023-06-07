@@ -1,0 +1,253 @@
+        /* Header */
+        
+        header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        
+        header h1.big-title {
+        margin: 20px;
+        font-size: 100px;
+        text-transform: uppercase;
+        color: black;
+        text-shadow: 0 0 5px black, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px black;
+        font-style: italic;
+        }
+
+        /* Body */
+
+        body {
+            background: url("../images/FondLamp.jpg")center center;
+            /*background-color: green;*/
+        }
+
+        .flex {
+            display: flex;
+        }
+        
+        /*-------------Cartes ------------*/
+
+        /* Carte 1 */
+        .wrapper,
+        .card {
+            height: 450px;
+            width: 300px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .wrapper{
+            perspective: 900px;
+            margin-top: 30px;
+        }
+        
+        .card{
+            text-align: center;
+            transition: all 1s cubic-bezier(0.7, -0.5, 0.3, 1.8);
+            transform-style: preserve-3d;
+        }
+
+        .wrapper:hover .card {
+            transform: rotateY(180deg);
+        }
+
+        .item-front,
+        .item-back {
+            width: 300px;
+            position: relative;
+            top: 0;
+            left: 0;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            box-shadow: 0 0 5px black, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px black, 0 0 30px #fff, 0 0 35px black;
+        }
+
+        .item-front {
+            cursor: pointer;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 25px;
+            background: url(../images/fondHangman.jpg) center center;
+            background-size: cover;
+            color: #fff;
+            text-shadow: 0 0 5px black, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px black;
+        }
+
+        .item-back {
+            transform: rotateY(180deg);
+            position: absolute;
+            border-radius: 25px;
+            height: 450px;
+            background: rgb(26, 26, 26);
+        }
+
+        .content {
+            height: 400px;
+            padding: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .item-title h3 {
+            color: black;
+            text-shadow: 0 0 5px black, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px black;
+            font-size: 35px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .item-title h4 {
+            color: black;
+            text-shadow: 0 0 5px black, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px black;
+            font-weight: 500;
+        }
+
+        .item-text {
+            color: black;
+            text-shadow: 0 0 5px black, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px black;
+            margin: 25px 0 50px;
+        }
+
+        /* Carte 2 */
+
+        .wrapper2,
+        .card2 {
+            height: 450px;
+            width: 300px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .wrapper2 {
+            perspective: 900px;
+            margin-top: 30px;
+        }
+
+        .card2{
+            text-align: center;
+            transition: all 1s cubic-bezier(0.7, -0.5, 0.3, 1.8);
+            transform-style: preserve-3d;
+        }
+
+        .wrapper2:hover .card2 {
+            transform: rotateY(180deg);
+        }
+
+        .item-front2,
+        .item-back2 {
+            width: 300px;
+            position: relative;
+            top: 0;
+            left: 0;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            box-shadow: 0 0 5px black, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px black, 0 0 30px #fff, 0 0 35px black;
+        }
+
+        .item-front2 {
+            cursor: pointer;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 25px;
+            background: url(../images/Pendu1.jpg)805px center;
+            background-color: black;
+            background-size: cover;
+        }
+
+        .item-back2 {
+            transform: rotateY(180deg);
+            position: absolute;
+            border-radius: 25px;
+            height: 450px;
+            background: rgb(26, 26, 26);
+        }
+
+        .content2 {
+            height: 400px;
+            padding: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .item-title2 h3 {
+            color: black;
+            text-shadow: 0 0 5px black, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px black;
+            font-size: 35px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .item-title2 h4 {
+            color: black;
+            text-shadow: 0 0 5px black, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px black;
+            font-weight: 500;
+        }
+
+        .item-text2 {
+            color: black;
+            text-shadow: 0 0 5px black, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px black;
+            margin: 25px 0 50px;
+        }
+
+
+        /* Bonne chance */
+
+        .gl {
+            margin-top: 100px;
+            font-size: 50px;
+            padding: 50px;
+            width: 300px;
+            font-style: italic;
+            color: black;
+            text-shadow: 0 0 5px black, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px black;
+        }
+
+        /* Bouton play */
+
+        .container-Btn {
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        button,
+        .pulse-button {
+            margin-left: 85px;
+            margin-top: 70px;
+            padding:15px;
+            width: 200px;
+            box-shadow: 0 0 5px black, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px black;
+            border-radius: 110px;
+            background-color: rgba(128, 128, 128, 0.158);
+            color: white;
+            text-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+            cursor: pointer;
+            animation: pulse 1.5s infinite cubic-bezier(0.66,0,0,1);
+            font-style: italic;
+        }
+
+        .pulse-button:hover {
+            animation: none;
+        }
+
+        @keyframes pulse {
+            to {
+                box-shadow: 0 0 0 45px rgba(238, 235, 235, 0);
+            }
+        }
+
+        /* Pied de page */
+        
+        footer {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        color: black;
+        text-shadow: 0 0 5px black, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px black;
+        font-style: italic;
+        }

@@ -1,0 +1,78 @@
+body{
+    background: url("../images/FondLamp.jpg") center no-repeat;
+}
+
+th,td {
+    border: 5px solid black;
+    padding: 10px;
+    margin-bottom: 100px;
+    margin-top: -40px;
+    background-color: transparent;
+    color: black;
+    text-shadow: 0 0 5px #fff, 0 0 10px black, 0 0 15px #fff, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+    font-style: italic;
+}
+
+table{
+    height: 20px;
+    border-collapse: collapse;
+    margin-left: 40%;
+    text-align: center;
+    font-size: 50px;
+    background-color:transparent;
+    color: black;
+    text-shadow: 0 0 5px #fff, 0 0 10px black, 0 0 15px #fff, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+    font-style: italic;
+    
+}
+
+h1 {
+    margin-bottom: 1px;
+    margin-top: 25px;
+    text-align: center;
+    color: black;
+    text-shadow: 0 0 5px #fff, 0 0 10px black, 0 0 15px #fff, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+    font-style: italic;
+    font-size: 130px;
+}
+
+#replay{  
+    border-color: #fff;
+    background-color: black;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px #fff, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+    font-style: italic;
+    border-radius: 800px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 90px;
+    padding-left: 90px;
+    text-align: center;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+        button{
+            box-shadow: 0 0 5px black, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px black;
+            background-color: rgba(128, 128, 128, 0.158);
+            color: white;
+            text-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+            cursor: pointer;
+            animation: pulse 1.5s infinite cubic-bezier(0.66,0,0,1);
+            font-style: italic;
+        }
+
+        button:hover {
+            animation: none;
+        }
+
+        @keyframes pulse {
+            to {
+                box-shadow: 0 0 0 45px rgba(238, 235, 235, 0);
+            }
+        }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="static/win.css" />
+
+    <title>Document</title>
+    <link rel="shortcut icon" href="/images/Eyes.gif">
+    
+</head>
+
+<body>
+    <h1>You won !</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{ range .Win }}
+            <tr>
+                <td>{{ .Name }}</td>
+                <td>{{ .Points }}</td>
+                <br>
+            </tr>
+            {{ end }}
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <br>
+
+    <form action="/" method="post">
+        <button id = "replay" type="submit" value="Play Again">Play Again</button>
+    </form>
+</body>
+
+</html>

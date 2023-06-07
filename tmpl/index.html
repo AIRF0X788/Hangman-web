@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--En-tête-->
+<head>
+
+    <!--Utf-8-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Lier le css-->
+    <link rel="stylesheet" href="static/style.css" />
+
+    <!--Titre + image-->
+    <title>Hangman</title>
+    <link rel="shortcut icon" href="/images/Eyes.gif">
+
+</head>
+
+<!--Corps de page-->
+<body>
+    <header>
+        <div class="arrow">
+            <a href="/hangman">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>          
+        <h1 class="big-title">Hangman Game</h1>
+    </header>
+    <div class="entete">
+        <p>Attempts remaining : {{ .Att }}</p>
+    </div>
+
+    <div class="main">
+        <div class="menu">
+            <h1 class="word">{{ .Word }}</h1>
+            <form action="/hangman2" method="post">
+                <div class="search">
+                    <input required type="text" name ="field2" placeholder="Let's try . . ." required>
+                </div>
+            </form>
+        </div>
+        <div class="contenu">
+            <p><pre>{{ .Jose }}</pre></p>
+            {{range .Rep}} 
+                {{.}} 
+            {{end}}
+        </div>
+    </div>
+</body>
+
+</html>
